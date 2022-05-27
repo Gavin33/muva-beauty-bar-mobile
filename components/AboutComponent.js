@@ -58,7 +58,7 @@ function About(props) {
                   "Self Care is giving the world the best of you instead of what is left of you."
                 </p>
                 <footer className="blockquote-footer">
-                  Muriel Strode,{' '}
+                Brittany M. Taylor, MBA,{' '}
                   <cite title="Source Title">
                     Brittany M. Taylor, MBA
                   </cite>
@@ -68,12 +68,7 @@ function About(props) {
           </Card>
         </div>
       </div>
-      <div className="row row-content">
-        <div className="col-12">
-          <h3>Community Partners</h3>
-        </div>
-        <PartnerList partners={props.partners} />
-      </div>
+     
     </div>
   
   );
