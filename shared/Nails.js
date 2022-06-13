@@ -77,5 +77,10 @@ const NAILS = [
     name: "Vacay",
     featured: true,
   },
+  {
+    id: 13,
+    src: "/../../img/PressOnLineLogo1copy.png",
+    name: "Muva Beauty Bar",
+  },
 ];
 export default NAILS;

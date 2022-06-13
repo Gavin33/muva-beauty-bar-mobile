@@ -13,7 +13,7 @@ import Constants from "expo-constants";
 import LOGO from "../shared/Logo";
 import { fetchImages } from "../redux/ActionCreators";
 import { connect } from "react-redux";
-import { baseUrl } from "../shared/baseUrl";
+import { baseUrl } from "../shared/baseUrl.js";
 
 const mapDispatchToProps = {
   fetchImages,
@@ -81,12 +81,12 @@ const HomeNavigator = createStackNavigator(
           onPress={() => navigation.toggleDrawer()}
         />
       ),
-      headerRight: () => (
+      /*       headerRight: () => (
         <Image
           source={require("./img/PressOnLineLogo1copy.png")}
           style={{ width: 100, flex: 1 }}
         />
-      ),
+      ), */
     }),
   }
 );

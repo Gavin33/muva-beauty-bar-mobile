@@ -4,6 +4,8 @@ export const images = (
   state = { isLoading: true, errMess: null, images: [] },
   action
 ) => {
+  console.log("hi again");
+  console.log(action);
   switch (action.type) {
     case ActionTypes.ADD_IMAGES:
       return {
