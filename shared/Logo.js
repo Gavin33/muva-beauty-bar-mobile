@@ -1,2 +1,2 @@
-const LOGO = "/../../img/Press On Line Logo 1 copy.png";
+const LOGO = "/../../img/PressOnLineLogo1copy.png";
 export default LOGO;
