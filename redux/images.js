@@ -1,6 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 
-export const images = (
+export const imagesReducer = (
   state = { isLoading: true, errMess: null, images: [] },
   action
 ) => {
