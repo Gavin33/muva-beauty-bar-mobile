@@ -8,6 +8,11 @@ import { ConfigureStore } from "./redux/configureStore";
 import Loading from "./components/LoadingComponent";
 
 const { persistor, store } = ConfigureStore();
+persistor.persist()
+console.log('persistor')
+console.log(persistor)
+console.log('store')
+console.log(store)
 
 export default function App() {
   return (

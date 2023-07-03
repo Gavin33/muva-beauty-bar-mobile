@@ -1,11 +1,9 @@
-import * as ActionTypes from "./ActionTypes";
+import * as ActionTypes from './ActionTypes';
 
-export const images = (
+export const imagesReducer = (
   state = { isLoading: true, errMess: null, images: [] },
   action
 ) => {
-  console.log("hi again");
-  console.log(action);
   switch (action.type) {
     case ActionTypes.ADD_IMAGES:
       return {

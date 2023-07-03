@@ -1,19 +1,20 @@
-import React, { Component } from "react";
-import BookNow from "./BookNowComponent";
-import Contact from "./ContactComponent";
-import About from "./AboutComponent";
-import Home from "./HomeComponent";
-import Loading from "./LoadingComponent";
-import { createStackNavigator } from "react-navigation-stack";
-import { createDrawerNavigator, DrawerItems } from "react-navigation-drawer";
-import { createAppContainer } from "react-navigation";
-import { View, StyleSheet, Platform, Image } from "react-native";
-import { Icon, ThemeProvider } from "react-native-elements";
-import Constants from "expo-constants";
-import LOGO from "../shared/Logo";
-import { fetchImages } from "../redux/ActionCreators";
-import { connect } from "react-redux";
-import { baseUrl } from "../shared/baseUrl.js";
+import React, { Component } from 'react';
+import BookNow from './BookNowComponent';
+import Contact from './ContactComponent';
+import About from './AboutComponent';
+import Home from './HomeComponent';
+import Loading from './LoadingComponent';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
+import { createAppContainer } from 'react-navigation';
+import { View, StyleSheet, Text, Image } from 'react-native';
+import { Icon, ThemeProvider } from 'react-native-elements';
+import Constants from 'expo-constants';
+import LOGO from '../shared/Logo';
+import { fetchImages } from '../redux/ActionCreators';
+import { connect } from 'react-redux';
+import { baseUrl } from '../shared/baseUrl.js';
+
 
 const mapDispatchToProps = {
   fetchImages,
@@ -25,17 +26,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   drawerHeader: {
-    backgroundColor: "#5637DD",
+    backgroundColor: '#5637DD',
     height: 140,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     flex: 1,
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   drawerHeaderText: {
-    color: "#fff",
+    color: '#fff',
     fontSize: 24,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   drawerImage: {
     margin: 10,
@@ -43,9 +44,9 @@ const styles = StyleSheet.create({
     width: 60,
   },
   drawerHeaderText: {
-    color: "#fff",
+    color: '#fff',
     fontSize: 24,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   drawerImage: {
     margin: 10,
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
   },
   stackIcon: {
     marginLeft: 10,
-    color: "black",
+    color: 'black',
     fontSize: 24,
   },
 });
@@ -66,13 +67,13 @@ const HomeNavigator = createStackNavigator(
   {
     defaultNavigationOptions: ({ navigation }) => ({
       headerStyle: {
-        backgroundColor: "#f8f9fa",
+        backgroundColor: '#f8f9fa',
       },
-      headerTintColor: "#fff",
+      headerTintColor: '#fff',
       headerTitleStyle: {
-        color: "#000000",
+        color: '#000000',
       },
-      headerTitleAlign: "center",
+      headerTitleAlign: 'center',
       headerLeft: () => (
         <Icon
           name="home"
